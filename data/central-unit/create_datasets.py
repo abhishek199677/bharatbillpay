@@ -34,7 +34,6 @@ except ValueError:
 df['date'] = df['date'].dt.strftime('%d-%m-%Y')
 
 # Save the melted DataFrame as output.csv in result_dir
-result_dir = Path("/Users/macbook/Desktop/bill/data/processed/central-unit")
 output_file = result_dir / "output.csv"
 df.to_csv(output_file, index=False,)
 
